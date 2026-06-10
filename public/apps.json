@@ -1,0 +1,126 @@
+[
+  {
+    "id": "kidlab",
+
+    "name": "KidLab",
+
+    "category": "SCIENCE",
+
+    "badge": "INTERNATIONAL SCIENCE APP",
+
+    "description": "Interactive science learning missions, futuristic quizzes, visual explanations and game-like educational experiences for students.",
+
+    "url": "https://villagekidlab.vidhwaan.com",
+
+    "icon": "https://villagekidlab.vidhwaan.com/icons/logo2.png",
+
+    "featured": false
+  },
+
+  {
+    "id": "gita",
+
+    "name": "Bhagavad Gita",
+
+    "category": "SPIRITUAL",
+
+    "badge": "SPIRITUAL EXPERIENCE",
+
+    "description": "Daily spiritual wisdom, Bhagavad Gita learning and peaceful life guidance experience.",
+
+    "url": "https://gita.vidhwaan.com",
+
+    "icon": "https://gita.vidhwaan.com/icons/icon-512.png",
+
+    "featured": false
+  },
+
+  {
+    "id": "zero",
+
+    "name": "Zero App",
+
+    "category": "SOCIAL",
+
+    "badge": "REELS & SHORT VIDEOS",
+
+    "description": "Upload your YouTube Short videos, share your creativity, explore trending reels, and become part of a next-generation social video community.",
+
+    "url": "https://zeroapp.vidhwaan.com",
+
+    "icon": "https://zeroapp.vidhwaan.com/icons/icon-512.png",
+
+    "featured": false
+  },
+
+  {
+    "id": "quotes",
+
+    "name": "Quotes",
+
+    "category": "MOTIVATION",
+
+    "badge": "DAILY INSPIRATION",
+
+    "description": "Premium quotes, powerful thoughts and motivational daily inspiration ecosystem.",
+
+    "url": "https://quotes.vidhwaan.com",
+
+    "icon": "https://quotes.vidhwaan.com/icons/icon-512.png",
+
+    "featured": false
+  },
+
+  {
+    "id": "marketplace",
+
+    "name": "Utukur Marketplace",
+
+    "category": "MARKETPLACE",
+
+    "badge": "VILLAGE COMMERCE",
+
+    "description": "Village commerce, buying, selling and futuristic local delivery ecosystem.",
+
+    "url": "https://market.vidhwaan.com",
+
+    "icon": "https://market.vidhwaan.com/icons/icon-512.png",
+
+    "featured": true
+  },
+  {
+    "id": "code-notes",
+    
+    "name": "Code & Notes",
+
+    "category": "PRODUCTIVITY",
+    
+    "badge": "STUDENTS & DEVELOPERS",
+    
+    "description": "Write notes, save ideas, practice coding, store code snippets and organize study materials in one place. Perfect for students, developers and lifelong learners.",
+    
+    "url": "https://apps.vidhwaan.com/",
+    
+    "icon": "https://utukur.vidhwaan.com/icons/dev.png",
+    
+    "featured": false
+  },
+
+  {
+    "id": "utukur-whatsapp",
+
+    "name": "Utukur Tech Community",
+
+    "category": "COMMUNITY",
+
+    "badge": "WHATSAPP GROUP",
+
+    "description": "Join the official Utukur Tech Community to get updates on new apps, technology projects, local opportunities, digital services, announcements, and future innovations built for Utukur.",
+
+    "url": "https://chat.whatsapp.com/I6x556vcGb17CtZKbnBnSF",
+
+    "icon": "https://utukur.vidhwaan.com/icons/icon-512.png",
+
+    "featured": false
+  }
+]

@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mygov",
+    "name": "MyGov India",
+    "category": "ప్రభుత్వ సేవలు",
+    "badge": "అధికారిక ప్రభుత్వ పోర్టల్",
+    "description": "ప్రభుత్వ కార్యక్రమాల్లో పాల్గొనండి, మీ అభిప్రాయాలను పంచుకోండి మరియు దేశ అభివృద్ధి కార్యక్రమాల సమాచారం పొందండి.",
+    "url": "https://www.mygov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "house-tax",
+    "name": "ఇంటి పన్ను",
+    "category": "ఆస్తి సేవలు",
+    "badge": "ఇంటి పన్ను సేవలు",
+    "description": "ఇంటి వివరాలు చూడండి, పన్ను చెల్లించండి మరియు రసీదులను డౌన్‌లోడ్ చేసుకోండి.",
+    "url": "https://swarnapanchayat.apcfss.in/LoginHouseTaxPayment",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "land-records",
+    "name": "మీ భూమి",
+    "category": "భూ రికార్డులు",
+    "badge": "భూమి సేవలు",
+    "description": "భూమి యాజమాన్యం, సర్వే నంబర్లు, అడంగల్ మరియు 1-బి వివరాలను చూడండి.",
+    "url": "https://meebhoomi.ap.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "meekosam",
+    "name": "మీ కోసం",
+    "category": "ఫిర్యాదులు",
+    "badge": "ప్రజా ఫిర్యాదులు",
+    "description": "గ్రామ సమస్యలు మరియు ప్రజా ఫిర్యాదులను ప్రభుత్వానికి తెలియజేసి స్థితిని తెలుసుకోండి.",
+    "url": "https://meekosam.ap.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "aadhaar",
+    "name": "ఆధార్ సేవలు",
+    "category": "గుర్తింపు సేవలు",
+    "badge": "UIDAI",
+    "description": "ఆధార్ డౌన్‌లోడ్ చేసుకోండి, చిరునామా మరియు మొబైల్ నంబర్ నవీకరించండి.",
+    "url": "https://uidai.gov.in/en/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "digilocker",
+    "name": "డిజిలాకర్",
+    "category": "డిజిటల్ పత్రాలు",
+    "badge": "డిజిటల్ ఇండియా",
+    "description": "ఆధార్, పాన్, మార్కుల మెమోలు, లైసెన్స్ మరియు ఇతర పత్రాలను డిజిటల్ రూపంలో పొందండి.",
+    "url": "https://www.digilocker.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "pan",
+    "name": "తక్షణ పాన్ కార్డ్",
+    "category": "ఆదాయపు పన్ను",
+    "badge": "పాన్ సేవలు",
+    "description": "కొత్త పాన్ కార్డ్ కోసం దరఖాస్తు చేసి ఈ-పాన్‌ను ఉచితంగా పొందండి.",
+    "url": "https://eportal.incometax.gov.in/iec/foservices/#/pre-login/instant-e-pan/getNewEpan",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "voter",
+    "name": "ఓటర్ సేవలు",
+    "category": "ఎన్నికలు",
+    "badge": "ఎన్నికల సంఘం",
+    "description": "ఓటర్ ఐడీ కోసం దరఖాస్తు చేయండి, వివరాలు సవరించండి మరియు ఓటరు జాబితా చూడండి.",
+    "url": "https://voters.eci.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "electricity",
+    "name": "విద్యుత్ సేవలు",
+    "category": "వినియోగ సేవలు",
+    "badge": "విద్యుత్ బిల్లు",
+    "description": "విద్యుత్ బిల్లులు చెల్లించండి, రసీదులు డౌన్‌లోడ్ చేసుకోండి మరియు వివరాలు చూడండి.",
+    "url": "https://www.apspdcl.in/ConsumerDashboard/login.jsp",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "hpgas",
+    "name": "హెచ్‌పీ గ్యాస్",
+    "category": "ఎల్పీజీ సేవలు",
+    "badge": "గ్యాస్ బుకింగ్",
+    "description": "గ్యాస్ సిలిండర్ బుక్ చేయండి, డెలివరీ స్థితి తెలుసుకోండి మరియు చెల్లింపులు చేయండి.",
+    "url": "https://myhpgas.in/myHPGas/QuickPay.aspx",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "umang",
+    "name": "ఉమంగ్",
+    "category": "ప్రభుత్వ సేవలు",
+    "badge": "ఆల్ ఇన్ వన్ సేవలు",
+    "description": "పీఎఫ్, పెన్షన్, గ్యాస్, ఆధార్ మరియు వేలాది ప్రభుత్వ సేవలను ఒకే చోట పొందండి.",
+    "url": "https://web.umang.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "parivahan",
+    "name": "డ్రైవింగ్ లైసెన్స్ & వాహన సేవలు",
+    "category": "రవాణా సేవలు",
+    "badge": "పరివహన్ సేవ",
+    "description": "డ్రైవింగ్ లైసెన్స్, వాహన రిజిస్ట్రేషన్, ఆర్‌సీ మరియు ఇతర రవాణా సేవలను పొందండి.",
+    "url": "https://parivahan.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "passport",
+    "name": "పాస్‌పోర్ట్ సేవ",
+    "category": "ప్రయాణ పత్రాలు",
+    "badge": "విదేశీ వ్యవహారాల శాఖ",
+    "description": "పాస్‌పోర్ట్ కోసం దరఖాస్తు చేయండి, అపాయింట్‌మెంట్ బుక్ చేసుకోండి మరియు స్థితిని తెలుసుకోండి.",
+    "url": "https://www.passportindia.gov.in/",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  },
+  {
+    "id": "udyam",
+    "name": "ఎంఎస్‌ఎంఈ నమోదు",
+    "category": "వ్యాపార సేవలు",
+    "badge": "ఉద్యమ్ పోర్టల్",
+    "description": "మీ వ్యాపారాన్ని MSMEగా నమోదు చేసుకుని ప్రభుత్వ ప్రయోజనాలు పొందండి.",
+    "url": "https://www.udyamregistration.gov.in/UdyamRegistration.aspx",
+    "icon": "https://utukur.vidhwaan.com/icons/gov.png"
+  }
+]
