@@ -1,4 +1,4 @@
-name: UTUKUR DIGITAL UNIVERSE DEPLOY
+name: GUDUR DIGITAL UNIVERSE DEPLOY
 
 on:
 
@@ -15,7 +15,7 @@ jobs:
 
     env:
 
-      PROJECT_NAME: utukur
+      PROJECT_NAME: gudur
 
     steps:
 
@@ -260,4 +260,4 @@ jobs:
 
         run: |
 
-          echo "UTUKUR DIGITAL UNIVERSE DEPLOYED SUCCESSFULLY"
+          echo "GUDUR DIGITAL UNIVERSE DEPLOYED SUCCESSFULLY"
