@@ -74,7 +74,7 @@
   {
     "id": "marketplace",
 
-    "name": "Utukur Marketplace",
+    "name": "Gudur Marketplace",
 
     "category": "MARKETPLACE",
 
@@ -101,25 +101,25 @@
     
     "url": "https://apps.vidhwaan.com/",
     
-    "icon": "https://utukur.vidhwaan.com/icons/dev.png",
+    "icon": "https://gudur.vidhwaan.com/icons/dev.png",
     
     "featured": false
   },
 
   {
-    "id": "utukur-whatsapp",
+    "id": "gudur",
 
-    "name": "Utukur Tech Community",
+    "name": "Gudur Tech Community",
 
     "category": "COMMUNITY",
 
-    "badge": "WHATSAPP GROUP",
+    "badge": "TELEGRAM GROUP",
 
-    "description": "Join the official Utukur Tech Community to get updates on new apps, technology projects, local opportunities, digital services, announcements, and future innovations built for Utukur.",
+    "description": "Join the official Gudur Tech Community to get updates on new apps, technology projects, local opportunities, digital services, announcements, and future innovations built for Gudur.",
 
-    "url": "https://chat.whatsapp.com/I6x556vcGb17CtZKbnBnSF",
+    "url": "https://t.me/villagemarketplace",
 
-    "icon": "https://utukur.vidhwaan.com/icons/icon-512.png",
+    "icon": "https://gudur.vidhwaan.com/icons/icon-512.png",
 
     "featured": false
   }
