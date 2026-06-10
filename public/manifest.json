@@ -1,8 +1,8 @@
 {
-  "name": "Utukur Tech Universe",
-  "short_name": "Utukur",
+  "name": "Gudur Tech Universe",
+  "short_name": "Gudur",
 
-  "description": "The futuristic tech ecosystem of Utukur.",
+  "description": "The futuristic tech ecosystem of Gudur.",
 
   "start_url": "/",
 
@@ -54,7 +54,7 @@
       "sizes": "512x512",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Utukur Tech Universe"
+      "label": "Gudur Tech Universe"
     }
 
   ]
