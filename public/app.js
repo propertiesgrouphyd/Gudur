@@ -1,5 +1,5 @@
 /* =========================================
-   UTUKUR DIGITAL UNIVERSE
+   GUDUR DIGITAL UNIVERSE
    APP.JS
 ========================================= */
 
@@ -755,7 +755,7 @@ setTimeout(
 
 console.log(
 
-  "%cUTUKUR DIGITAL UNIVERSE",
+  "%cGUDUR DIGITAL UNIVERSE",
 
   `
     color:#7defff;
