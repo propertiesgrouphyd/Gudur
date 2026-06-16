@@ -18,6 +18,24 @@
   },
 
   {
+    "id": "billwaan",
+
+    "name": "Billwaan App",
+
+    "category": "BUSINESS",
+
+    "badge": "BILLING & INVOICES",
+
+    "description": "Create professional Bills, Invoices, Estimates, Quotations, Receipts and Proforma Invoices with beautiful PDF export, print and share features. Perfect for businesses, shops, freelancers and professionals.",
+
+    "url": "https://billwaan.vidhwaan.com",
+
+    "icon": "https://billwaan.vidhwaan.com/icons/icon-512.png",
+
+    "featured": false
+  },
+
+  {
     "id": "gita",
 
     "name": "Bhagavad Gita",
