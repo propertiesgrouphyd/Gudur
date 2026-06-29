@@ -3,7 +3,7 @@
    SERVICE WORKER
 ========================================= */
 
-const CACHE_NAME = "vidhwaan-village-v20";
+const CACHE_NAME = "vidhwaan-village-v22";
 
 /* =========================================
    STATIC ASSETS
