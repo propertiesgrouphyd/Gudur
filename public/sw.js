@@ -1,262 +1,250 @@
 /* =========================================
-   UTUKUR DIGITAL UNIVERSE
+   VIDHWAAN VILLAGE MARKETPLACE
    SERVICE WORKER
 ========================================= */
 
-const CACHE_NAME =
-
-  "utukur-universe-v19";
+const CACHE_NAME = "vidhwaan-village-v20";
 
 /* =========================================
    STATIC ASSETS
 ========================================= */
 
 const STATIC_ASSETS = [
-
   "/",
   "/index.html",
   "/main.css",
   "/app.js",
   "/manifest.json",
-
   "/favicon.ico",
-
   "/icons/logo.png",
   "/icons/icon-192.png",
   "/icons/icon-512.png"
-
 ];
 
 /* =========================================
    INSTALL
 ========================================= */
 
-self.addEventListener(
-  "install",
-  event => {
+self.addEventListener("install", event => {
 
-    event.waitUntil(
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(STATIC_ASSETS))
+      .then(() => self.skipWaiting())
+  );
 
-      caches
-        .open(CACHE_NAME)
-        .then(cache => {
-
-          return cache.addAll(
-            STATIC_ASSETS
-          );
-
-        })
-        .then(() => {
-
-          return self.skipWaiting();
-
-        })
-
-    );
-
-  }
-);
+});
 
 /* =========================================
    ACTIVATE
 ========================================= */
 
-self.addEventListener(
-  "activate",
-  event => {
+self.addEventListener("activate", event => {
 
-    event.waitUntil(
+  event.waitUntil(
 
-      caches
-        .keys()
-        .then(keys => {
+    caches.keys().then(keys =>
 
-          return Promise.all(
+      Promise.all(
 
-            keys.map(key => {
+        keys.map(key => {
 
-              if (
-                key !== CACHE_NAME
-              ) {
-
-                return caches.delete(
-                  key
-                );
-
-              }
-
-            })
-
-          );
-
-        })
-        .then(() => {
-
-          return self.clients.claim();
+          if (key !== CACHE_NAME) {
+            return caches.delete(key);
+          }
 
         })
 
-    );
+      )
 
-  }
-);
+    ).then(() => self.clients.claim())
+
+  );
+
+});
 
 /* =========================================
    FETCH
 ========================================= */
 
-self.addEventListener(
-  "fetch",
-  event => {
+self.addEventListener("fetch", event => {
 
-    if (
-      event.request.method !==
-      "GET"
-    ) {
+  if (event.request.method !== "GET") {
+    return;
+  }
 
-      return;
+  const url = new URL(event.request.url);
 
-    }
+  /* Ignore browser extensions and unsupported schemes */
+
+  if (
+    url.protocol !== "http:" &&
+    url.protocol !== "https:"
+  ) {
+    return;
+  }
+
+  /* Never cache external requests */
+
+  if (url.origin !== self.location.origin) {
+    return;
+  }
+
+  /* Network First for HTML */
+
+  if (
+    event.request.mode === "navigate" ||
+    event.request.destination === "document"
+  ) {
 
     event.respondWith(
 
-      caches.match(
-        event.request
-      )
-      .then(cached => {
+      fetch(event.request)
 
-        if (cached) {
-
-          return cached;
-
-        }
-
-        return fetch(
-          event.request
-        )
         .then(response => {
 
           if (
-            !response ||
-            response.status !== 200
+            response &&
+            response.ok &&
+            !response.redirected
           ) {
 
-            return response;
+            const copy = response.clone();
 
-          }
+            caches.open(CACHE_NAME).then(cache => {
 
-          const responseClone =
-            response.clone();
-
-          caches
-            .open(CACHE_NAME)
-            .then(cache => {
-
-              cache.put(
-                event.request,
-                responseClone
-              );
+              cache.put(event.request, copy);
 
             });
+
+          }
 
           return response;
 
         })
-        .catch(() => {
 
-          if (
-            event.request.destination ===
-            "image"
-          ) {
-
-            return caches.match(
-              "/icons/icon-192.png"
-            );
-
-          }
-
-        });
-
-      })
+        .catch(() => caches.match(event.request))
 
     );
 
+    return;
+
   }
-);
+
+  /* Cache First for static files */
+
+  event.respondWith(
+
+    caches.match(event.request)
+
+      .then(cache => {
+
+        if (cache) {
+          return cache;
+        }
+
+        return fetch(event.request)
+
+          .then(response => {
+
+            if (
+              !response ||
+              !response.ok ||
+              response.redirected ||
+              response.type !== "basic"
+            ) {
+
+              return response;
+
+            }
+
+            const copy = response.clone();
+
+            caches.open(CACHE_NAME).then(cache => {
+
+              cache.put(event.request, copy);
+
+            });
+
+            return response;
+
+          });
+
+      })
+
+      .catch(() => {
+
+        if (event.request.destination === "image") {
+
+          return caches.match("/icons/icon-192.png");
+
+        }
+
+      })
+
+  );
+
+});
 
 /* =========================================
    MESSAGE
 ========================================= */
 
-self.addEventListener(
-  "message",
-  event => {
+self.addEventListener("message", event => {
 
-    if (
-      event.data &&
-      event.data.type ===
-      "SKIP_WAITING"
-    ) {
+  if (
+    event.data &&
+    event.data.type === "SKIP_WAITING"
+  ) {
 
-      self.skipWaiting();
-
-    }
+    self.skipWaiting();
 
   }
-);
+
+});
 
 /* =========================================
    PUSH
 ========================================= */
 
-self.addEventListener(
-  "push",
-  event => {
+self.addEventListener("push", event => {
 
-    if (!event.data) {
-      return;
-    }
+  if (!event.data) {
+    return;
+  }
 
-    const data =
-      event.data.json();
+  const data = event.data.json();
+
+  event.waitUntil(
 
     self.registration.showNotification(
 
-      data.title || "Utukur",
+      data.title || "Village Marketplace",
 
       {
-
-        body:
-          data.body || "",
-
-        icon:
-          "/icons/icon-192.png",
-
-        badge:
-          "/icons/icon-192.png"
-
+        body: data.body || "",
+        icon: "/icons/icon-192.png",
+        badge: "/icons/icon-192.png"
       }
 
-    );
+    )
 
-  }
-);
+  );
+
+});
 
 /* =========================================
    NOTIFICATION CLICK
 ========================================= */
 
-self.addEventListener(
-  "notificationclick",
-  event => {
+self.addEventListener("notificationclick", event => {
 
-    event.notification.close();
+  event.notification.close();
 
-    event.waitUntil(
+  event.waitUntil(
 
-      clients.openWindow("/")
+    clients.openWindow("/")
 
-    );
+  );
 
-  }
-);
+});
