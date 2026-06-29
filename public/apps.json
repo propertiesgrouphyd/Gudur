@@ -1,5 +1,23 @@
 [
   {
+    "id": "vidhai",
+
+    "name": "VidhAI",
+
+    "category": "AI SERVICES",
+
+    "badge": "OUR AI TEAM",
+
+    "description": "Bring your ideas to life with our AI team. Submit your project requirements and budget to receive custom AI solutions, business automation, websites, mobile apps and software development tailored to your needs.",
+
+    "url": "https://vidhai.vidhwaan.com",
+
+    "icon": "https://vidhai.vidhwaan.com/icons/icon-512.png",
+
+    "featured": false
+  },
+
+  {
     "id": "kidlab",
 
     "name": "KidLab",
@@ -100,44 +118,27 @@
 
     "description": "Village commerce, buying, selling and futuristic local delivery ecosystem.",
 
-    "url": "https://market.vidhwaan.com",
+    "url": "/gudur524101/index.html",
 
     "icon": "https://market.vidhwaan.com/icons/icon-512.png",
 
     "featured": true
   },
+
   {
     "id": "code-notes",
-    
+
     "name": "Code & Notes",
 
     "category": "PRODUCTIVITY",
-    
+
     "badge": "STUDENTS & DEVELOPERS",
-    
+
     "description": "Write notes, save ideas, practice coding, store code snippets and organize study materials in one place. Perfect for students, developers and lifelong learners.",
-    
+
     "url": "https://apps.vidhwaan.com/",
-    
-    "icon": "https://gudur.vidhwaan.com/icons/dev.png",
-    
-    "featured": false
-  },
 
-  {
-    "id": "gudur",
-
-    "name": "Gudur Tech Community",
-
-    "category": "COMMUNITY",
-
-    "badge": "TELEGRAM GROUP",
-
-    "description": "Join the official Gudur Tech Community to get updates on new apps, technology projects, local opportunities, digital services, announcements, and future innovations built for Gudur.",
-
-    "url": "https://t.me/villagemarketplace",
-
-    "icon": "https://gudur.vidhwaan.com/icons/icon-512.png",
+    "icon": "https://utukur.vidhwaan.com/icons/dev.png",
 
     "featured": false
   }
